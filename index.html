@@ -14,14 +14,16 @@
         <div class="countdown__digit" id="seconds">00:00</div>
       </div>
     </div>
-    <a class="full-button" id="toggle">Toggle size</a>
-    <div class="input-time-container">
+    <footer>
+      <a class="full-button" id="toggle">Toggle size</a>
+      <div class="input-time-container">
         <div class="input-time">
             <input id="second_amount" onkeypress="verifyNumber(event)" type="text" maxlength="4" placeholder="10 seconds">
             <button onclick="setTimer()">start</button>
         </div>
         <span id="display_time" class="display__time">00:10</span>
     </div>
+    </footer>
     <script src="./script.js"></script>
   </body>
 </html>
