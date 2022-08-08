@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock by Jervi</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="countdown countdown--wide" id="countdown">
+        <div class="countdown__fill" id="ticker"></div>
+        <div class="countdown__digit" id="seconds">00:00</div>
+      </div>
+    </div>
+    <a class="full-button" id="toggle">Toggle size</a>
+    <div class="input-time-container">
+        <div class="input-time">
+            <input id="second_amount" onkeypress="verifyNumber(event)" type="text" maxlength="4" placeholder="10 seconds">
+            <button onclick="setTimer()">start</button>
+        </div>
+        <span id="display_time" class="display__time">00:10</span>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
